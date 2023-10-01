@@ -7,7 +7,6 @@ public class Sort {
 	 * Please implement all the sorting algorithm. Feel free to add helper methods.
 	 * Store all the sorted data into one of the databases.
 	 */
-u
 
     public int[] selectionSort(int [] array){
         final long startTime = System.currentTimeMillis();

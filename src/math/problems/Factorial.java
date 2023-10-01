@@ -1,5 +1,4 @@
 package math.problems;
-
 public class Factorial {
 
     public static void main(String[] args) {
@@ -8,6 +7,16 @@ public class Factorial {
          * Write a java program to find Factorial of a given number using Recursion as well as Iteration.
          *
          */
+        int number = 5;
+        long factorial = calculateFactorialIterative(number);
+        System.out.println("The Factorial of " + number + " is: " + factorial);
+    }
 
+    public static long calculateFactorialIterative(int n) {
+        long factorial = 1;
+        for (int i = 1; i <= n; i++) {
+            factorial *= i;
+        }
+        return factorial;
     }
 }

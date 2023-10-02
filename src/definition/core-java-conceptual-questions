@@ -1,31 +1,43 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-A.
+A. Programing language is instructing for computer to understand between human vs softwere for example: Python, Ruby, Java, JavaScript, C, C++ etc.
 
 
 
 
 What jdk contains or composed of and define each components?
-A.
-
+A.The Java Development Kit.
 
 
 
 
 What is IDE?
-A.
-
-
+A.Integrated development environment.
 
 What are the IDEs available in the market to support java?
-A.
-
-
+A.BlueJ.
+  JDeveloper.
+  JCreator.
+  DrJava.
+  JGrasp.
+  IntelliJ.
+  Eclipse.
 
 Explain the entire java life cycle.
+
+
+
+
 what is class?
+
+
+
 What is object?
+
+
+
+
 What is the entry point of an application?
 Why main is static?
 Which class is the superclass of all classes?

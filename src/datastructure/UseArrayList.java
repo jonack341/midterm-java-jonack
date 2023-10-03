@@ -1,70 +1,26 @@
-package datastructure;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
+package design;
 
-public class UseArrayList {
+public interface Employee {
 
-	public static void main(String[] args) {
-		/*
-		 * Demonstrate how to use ArrayList that includes add,peek,remove,retrieve elements.
-		 * Use For Each loop and while loop with Iterator to retrieve data.
-		 * Store all the sorted data into one of the databases.
-		 *
-		 */
+	/*Employee is an Interface which contains multiple unimplemented methods.Again few methods
+	has been declared in below. you need to brainstorm to add more methods to meet the business requirements.
+	*/
+	//please read the following method and understand the business requirements of these following methods
+	//and then implement these in a concrete class.
 
-		// Create an ArrayList
-		ArrayList<String> arrayList = new ArrayList<>();
-		arrayList.add("Earth");
-		arrayList.add("Venus");
-		arrayList.add("Mars");
-		arrayList.add("Saturn");
-		arrayList.add("Jupiter");
+	//employeeId() will return employee id.
+	public int employeeId();
 
-		// Demonstration of ArrayList
-		System.out.println("ArrayList: " + arrayList);
-		System.out.println("Peek (get element at index 2): " + arrayList.get(2));
-		System.out.println("Remove element 'Mars': " + arrayList.remove("Mars"));
-		System.out.println("ArrayList after removal: " + arrayList);
+	//employeeName() will return employee name
+	public String employeeName();
 
-		// Sorting of ArrayList
-		Collections.sort(arrayList);
-		System.out.println("Sorted ArrayList: " + arrayList);
+	//assignDepartment() will assign employee to departments
+	public void assignDepartment();
 
-		// for-each loop to retrieve data
-		System.out.println("Using for-each loop:");
-		for (String planet : arrayList) {
-			System.out.println(planet);
-		}
+	//calculate employee salary
+	public int calculateSalary();
 
-		// while loop with Iterator to retrieve data
-		System.out.println("\nUsing while loop with Iterator:");
-		Iterator<String> iterator = arrayList.iterator();
-		while (iterator.hasNext()) {
-			System.out.println(iterator.next());
-		}
+	//employee benefit
+	public void benefitLayout();
 
-		// Store data to DB
-		try {
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/midterm", "root", "123456");
-			String insertQuery = "INSERT INTO planets (planet_name) VALUES (?)";
-			PreparedStatement preparedStatement = conn.prepareStatement(insertQuery);
-
-			for (String planets : arrayList) {
-				preparedStatement.setString(1, planets);
-				preparedStatement.executeUpdate();
-			}
-
-			System.out.println("\nData stored in the database successfully.");
-
-			preparedStatement.close();
-			conn.close();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
 }

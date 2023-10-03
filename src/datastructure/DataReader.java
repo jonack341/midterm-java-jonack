@@ -47,8 +47,9 @@ public class DataReader {
 
 			// Demonstrate using Stack methods
 			System.out.println("Using Stack:");
-			System.out.println(wordStack.peek());
-			System.out.println(wordStack.search("self-driving"));
+			System.out.println("Top element (peek): " + wordStack.peek());
+			System.out.println("Searching 'self-driving' in Stack: " + wordStack.search("self-driving"));
+			System.out.println("Popping elements from Stack:");
 			while (!wordStack.isEmpty()) {
 				System.out.print(wordStack.pop() + " ");
 			}
@@ -77,4 +78,3 @@ public class DataReader {
 		}
 	}
 }
-

@@ -6,7 +6,7 @@ public class Palindrome {
           If a String is reversed and it remains unchanged, that is called Palindrome. For example, MOM,DAD,MADAM are
           Palindrome. So write java code to check if a given String is Palindrome or not.
          */
-        String word = "radar";
+        String word = "Rahim";
 
         if (isPalindrome(word)) {
             System.out.println(word + " is a palindrome.");

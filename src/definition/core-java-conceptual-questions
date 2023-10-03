@@ -24,28 +24,78 @@ A.BlueJ.
   IntelliJ.
   Eclipse.
 
+
 Explain the entire java life cycle.
-
-
+1. Writing Code
+3. Compiling
+4. Bytecode
+5. Running
+6. Execution
+7. Output
+8. Termination
 
 
 what is class?
+A. Class is a blueprint or a template for creating objects.
 
 
 
 What is object?
-
+A. In JAVA object is an instance created from a class. It represents a specific item or concept
+     with characteristics (attributes) and behaviors (methods) defined by the class
 
 
 
 What is the entry point of an application?
+A. The entry point of an application in Java is the main method. This is where the program begins its execution.
+
+
 Why main is static?
+A. .The main method in Java is declared as static because it needs to be accessible without
+     creating an instance of the class.
+
+
+
 Which class is the superclass of all classes?
+A. The object class
+
+
 What is difference between path and classpath variables?
+A. Path variable is used in reference to OS environment while classpath is specifically used for JAVA environment
+    to locate classes & other resources required by JAVA applications.
+
+
+
+
 What is the difference between an Interface and Abstract class?
+A. bstract classes allow constructors & can have concrete methods but interface cannot.
+      Interface supports multiple inheritance.
+
+
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+A. No you cannot. You use it by using the word 'implement' such as "class MyClass implements MyInterface"
+   Access specifier are keywords that determine the visibility or accessibility of classes, fields, methods, etc.
+   such as public, protected, default, & private
+
+
 what is Access Specifier?
+A.
+
+
 What is OOP ? Define each feature of java OOP.
+A. OOP is object oriented programming. OOP uses objects in JAVA code which instantiates java classes.
+   There are four ways by which OOPs are used: Encapsulation, Inheritance, Polymorphism, & Abstraction
+    Encapsulation ensures that only the class itself can access and modify the data.
+    Inheritance allows you to create a new class that is based on an existing class. Parent-child classesw.
+    Polymorphism allows you to write code that can work with different types of objects using the
+    same method or function.
+
+
+
+
+
+
 What is Java Package and which package is imported by default?
 What is API? Name list of API that you have used so far.
 Does java support multiple inheritance, explain why or why not?
